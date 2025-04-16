@@ -47,23 +47,27 @@ public class PracticeQuestions {
 		// 	System.out.println(l.previous());
 		// }
 
+		//----Add a new Employee to the list at a specific index-------
 		// empList.add(2, emp6);    //Question2
 
+		//----Remove an Employee object from the list by its ID-------
 		// empList.removeIf(e->e.getId()==8863);   //Question 3
 
+		//-------Replace an existing employee in the list with another one at a given index-------
 		// empList.set(0,emp6);      //Question5
 
+		//-----  Create an ArrayList of 10 Employee objects and display all employee details using a for-each loop------
 		// empList.forEach(e->System.out.println(e));    //Question1
 
-
+		//----Add a new Employee to the list at a specific index----
 		// for(Employee emp:empList){                                 //Question4
 		// 	if(emp.getName().equals("Priya Sharma")){
 		// 		System.out.println("Employee is: "+ emp);
 		// 	}
 		// }
 
+		//------Print names of all employees who are *female* -------
 		// ArrayList<Employee> females=new ArrayList<>();      //Question6
-
 		// for (Employee emp : empList) {
 		// 	if (emp.getGender() == 'F') {
 		// 		females.add(emp);
@@ -71,6 +75,8 @@ public class PracticeQuestions {
 		// }
 		// System.out.println("Female Employees are: " + females);
 		
+
+		//-------Find all *employees with salary greater than ₹80,000*.------
 		// ArrayList<Employee> salary=new ArrayList<>();      //Question7
 
 		// for (Employee emp : empList) {
@@ -81,6 +87,7 @@ public class PracticeQuestions {
 		// System.out.println("Employees with above 80,000 salary are: " + salary);
 
 
+		//-------Count how many employees are *married*-------
 		// int count=0;                               //Question8
 		// for(Employee emp:empList){
 		// 	if(emp.isMarried()==true){
@@ -89,7 +96,8 @@ public class PracticeQuestions {
 		// }
 		// System.out.println("Married Employees are: "+ count);
 
-
+		
+		//----- Print all employees whose name *starts with 'A'*------
 		// empList.forEach(e->{                         //Question10
 		// 	if(e.getName().startsWith("A")){
 		// 		System.out.println(e);
