@@ -1,6 +1,7 @@
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+//POJO or Bean
 public class Employee
 {
 	private int id;

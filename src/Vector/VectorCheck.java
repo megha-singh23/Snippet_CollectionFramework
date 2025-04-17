@@ -2,10 +2,13 @@ package Vector;
 
 import java.util.Enumeration;
 import java.util.Iterator;
-import java.util.RandomAccess;
 import java.util.Vector;
 
 public class VectorCheck {
+
+    //Thread Safety (Synchronized):
+    // All methods in Vector are synchronized, meaning it's safe for multi-threaded environments.
+    // Example: If multiple threads are adding/removing elements from the list, Vector handles it safely.
 
     public void tryVector() {
        
