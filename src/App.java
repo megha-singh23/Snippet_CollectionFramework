@@ -1,4 +1,5 @@
 import Streams.Steamfunc;
+import Vector.ChildStack;
 import Vector.VectorCheck;
 
 public class App {
@@ -9,7 +10,10 @@ public class App {
         // Steamfunc s=new Steamfunc();
         // s.tryStream();
 
-        VectorCheck v=new VectorCheck();
-        v.tryVector();
+        // VectorCheck v=new VectorCheck();
+        // v.tryVector();
+
+        ChildStack ch=new ChildStack();
+        ch.tryStack();
     }
 }
