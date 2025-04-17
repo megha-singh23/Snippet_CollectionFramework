@@ -1,9 +1,14 @@
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Map;
 import java.util.Spliterator;
+import java.util.Vector;
+import java.util.stream.Collectors;
 
 public class PracticeQuestions {
 
@@ -96,13 +101,51 @@ public class PracticeQuestions {
 		// }
 		// System.out.println("Married Employees are: "+ count);
 
-		
+
 		//----- Print all employees whose name *starts with 'A'*------
 		// empList.forEach(e->{                         //Question10
 		// 	if(e.getName().startsWith("A")){
 		// 		System.out.println(e);
 		// 	}
 		// });
+
+
+		//------------ Sort the employee list by *name in alphabetical order*------
+		// Collections.sort(empList,(e1,e2)->e1.getName().compareTo(e2.getName()));
+		// System.out.println(empList);
+
+
+		//-------Sort the employee list by *salary in descending order*---------
+
+		// Collections.sort(empList,new Comparator<Employee>() {
+		// 	public int compare(Employee e1,Employee e2){
+		// 		return Integer.compare(e2.getId(),e1.getId());
+		// 	}
+		// });
+		//------ By Lambda Expression-----
+		//Collections.sort(empList,(e1,e2)->(Integer.compare(e2.getId(),e1.getId())));
+		//System.out.println(empList);
+
+
+		//----Sort the employee list by *date of birth*-----------
+		// Collections.sort(empList,(e1,e2)->e2.getDob().compareTo(e1.getDob()));
+		// System.out.println(empList);
+
+		//?????----- Group employees by gender and print how many male/female employees are there------
+		
+		//------- Find the *employee with the highest salary*-------------
+		// int max=0;
+		// while (empList.size()<=0) {
+		// 	if()
+			
+		// }
+
+		//------Check if any employee was *created in the current month*-----------
+		for(Employee emp: empList){
+			emp.getJoinedAt().getMonth();
+		}
+
+
 
 
         // empList.removeIf(e->{
