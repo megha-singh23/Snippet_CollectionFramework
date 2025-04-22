@@ -44,7 +44,11 @@ public class ArrayDequeTest {
             System.out.println(a.next());
         }
 
+        System.out.println(arr.contains(65));
+
         arr.clear();
         
     }
+
+    
 }
