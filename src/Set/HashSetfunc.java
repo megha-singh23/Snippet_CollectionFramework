@@ -13,7 +13,10 @@ public class HashSetfunc {
         System.out.println(nums);
 
         HashSet<String> num=new HashSet<>();
-        
+        num.add("Hello");
+        num.add("Hii");
+
+        System.out.println(num);
 
 
 
