@@ -1,4 +1,7 @@
+import java.util.HashMap;
+
 import LinkedList.LinkedMethods;
+import Map.Hashmapfunc;
 import Queue.PriorityQueueTest;
 import Set.HashSetfunc;
 import Streams.Steamfunc;
@@ -25,8 +28,11 @@ public class App {
         // PriorityQueueTest p=new PriorityQueueTest();
         // p.tryPriorityQueue();
 
-        HashSetfunc h=new HashSetfunc();
-        h.tryHashSet();
+        // HashSetfunc h=new HashSetfunc();
+        // h.tryHashSet();
 
+
+        Hashmapfunc h=new Hashmapfunc();
+        h.tryhashmap();
     }
 }
