@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Test {
     
     static void main(String[] args){
-
         
         Scanner sc=new Scanner(System.in);
         System.out.println("Is Strawberry a Fruit??");

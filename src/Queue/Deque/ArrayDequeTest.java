@@ -47,6 +47,4 @@ public class ArrayDequeTest {
         arr.clear();
         
     }
-
-    
 }
