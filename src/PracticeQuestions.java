@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 
 public class PracticeQuestions {
 
+
 	public void tryArrayList(){
     
     	Employee emp1 = new Employee(8861, "Aman Tiwari", 'M', 8448179216L, false, 85000, LocalDate.of(1999, 4, 22),LocalDateTime.now());
