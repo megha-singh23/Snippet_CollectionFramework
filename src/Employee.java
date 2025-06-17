@@ -12,8 +12,10 @@ public class Employee
 	private double salary;
 	private LocalDate dob;
 	private LocalDateTime joinedAt;
+
 	public Employee() {
 	}
+	
 	public Employee(int id, String name, char gender, long mobileNo, boolean isMarried, double salary, LocalDate dob,
 			LocalDateTime joinedAt) {
 		

@@ -38,13 +38,24 @@ public class ArrayDequeTest {
         System.out.println(arr.isEmpty());
 
         System.out.println(arr.poll());
+        
+        arr.remove();
+        System.out.println(arr.equals(46));
 
         Iterator<Integer> a=arr.iterator();
         while(a.hasNext()){
             System.out.println(a.next());
         }
 
+        System.out.println(arr.contains(65));
+
         arr.clear();
         
     }
+<<<<<<< HEAD
 }
+=======
+
+    
+}
+>>>>>>> a9e4eb966c1dada482a29fb6ea087a9af68c11e2
