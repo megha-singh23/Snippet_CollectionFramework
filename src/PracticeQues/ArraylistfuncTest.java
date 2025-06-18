@@ -11,6 +11,7 @@ import java.util.Spliterator;
 import java.util.Vector;
 import java.util.stream.Collectors;
 
+
 public class ArraylistfuncTest {
 
 	public void tryArrayList(){
@@ -146,13 +147,10 @@ public class ArraylistfuncTest {
 			emp.getJoinedAt().getMonth();
 		}
 
-
-
-
         // empList.removeIf(e->{
         //     if(e.getSalary>=80000){
         //         System.out.println(e.getName()+" Deleted Data...");
         //     }
         // });
-}
+	}
 }

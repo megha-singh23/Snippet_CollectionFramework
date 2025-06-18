@@ -1,44 +1,41 @@
 package PracticeQues;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
 
 public class Arraylist_missingNo { 
 
     public static void main(String[] args) {
         
-       ArrayList<Integer> list=new ArrayList<>();
+        List<Integer> list=Arrays.asList(1,2,3,null,5);
 
-       list.add(1);
-       list.add(2);  
-       list.add(3);
-       list.add(null);
-       list.add(5);
+    //    list.forEach(s->System.out.println(s));
 
-       list.forEach(s->System.out.println(s));
-
-        // Iterator<Integer> itr=list.iterator();
-
-        // while(itr.hasNext()){
-
-        //     for(int i=0;i<10;i++){
-        //         if(itr.equals(i)){
-                    
-        //         }
-        //     }
-        // }
-
+       int nullIndex=-1;
+    
+       for(int i=0;i<list.size();i++){
         
-
-        if(list.equals(null)){
-            
+        if(list.get(i)==null){
+            nullIndex=i;
         }
-        for(int i=0;i<=list.size();i++){
+    }        
+        for(int i=1;i<=list.size();i++){
+
+            boolean flag=false;
 
             for (Integer l : list) {
-                if(l!=i && l==null){
-                    System.out.println(list.indexOf(null)+" No. is "+l.valueOf(i));
+
+                if(l!=null && l==i){
+                    flag=true;
+                    break;
                 }
+            }
+
+            if(!flag){
+                System.out.println("Missing No. is: "+ i+ " at "+nullIndex +" index");
+                break;
             }
 
         }
