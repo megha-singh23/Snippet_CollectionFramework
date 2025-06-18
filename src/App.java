@@ -1,4 +1,8 @@
+import java.util.Enumeration;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.ListIterator;
+import java.util.Vector;
 
 import LinkedList.LinkedMethods;
 import Map.Hashmapfunc;
@@ -9,7 +13,8 @@ import Vector.ChildStack;
 import Vector.VectorCheck;
 
 public class App {
-    public static void main(String[] args) throws Exception {
+
+    public static void main(String[] args)  {
         //PracticeQuestions ar=new PracticeQuestions();
         //ar.tryArrayList();
 
@@ -32,7 +37,22 @@ public class App {
         // h.tryHashSet();
 
 
-        Hashmapfunc h=new Hashmapfunc();
-        h.tryhashmap();
+        // Hashmapfunc h=new Hashmapfunc();
+        // h.tryhashmap();
+        
+
+        Vector<Integer> v=new Vector<>();
+
+        Enumeration<Integer> e=v.elements();
+
+        Iterator<Integer> itr=v.iterator();
+
+        ListIterator<Integer> ltr=v.listIterator();
+
+        System.out.println(e.getClass().getName());
+        System.out.println(itr.getClass().getName());
+        System.out.println(ltr.getClass().getName());
+        System.out.println(v.hashCode());
+
     }
 }

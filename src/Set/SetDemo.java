@@ -16,7 +16,7 @@ public class SetDemo {
         s.add(new Student(106,"Kajol",79.9));
         s.add(new Student(106,"Kajol",79.9));
 
-
+        
         s.forEach(System.out::println);
 
 
