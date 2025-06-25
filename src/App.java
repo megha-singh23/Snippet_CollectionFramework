@@ -30,8 +30,8 @@ public class App {
         // LinkedMethods li=new LinkedMethods();
         // li.trylinklist();
 
-        // PriorityQueueTest p=new PriorityQueueTest();
-        // p.tryPriorityQueue();
+        PriorityQueueTest p=new PriorityQueueTest();
+        p.tryPriorityQueue();
 
         // HashSetfunc h=new HashSetfunc();
         // h.tryHashSet();

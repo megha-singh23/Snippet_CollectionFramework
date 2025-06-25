@@ -16,7 +16,7 @@ public class Hashmapfunc {
         list.put("Mobileno","9913679328");
         list.put("skills",new String[]{"HTML","CSS","Javascript","Java"}.toString());
 
-        System.out.println(list);
+         System.out.println(list);
 
         Set<Entry<String, Object>> s1=list.entrySet();
 

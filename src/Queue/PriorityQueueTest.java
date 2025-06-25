@@ -1,7 +1,6 @@
 package Queue;
 
 import java.util.PriorityQueue;
-import java.util.Queue;
 import java.util.Spliterator;
 
 public class PriorityQueueTest {
@@ -14,6 +13,8 @@ public class PriorityQueueTest {
         qu.add(88);
         qu.add(23);
         qu.add(34);
+        qu.add(67);
+        System.out.println(qu);
         
         qu.comparator();
 
