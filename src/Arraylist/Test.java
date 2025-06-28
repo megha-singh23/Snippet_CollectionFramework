@@ -13,14 +13,13 @@ import java.util.HashSet;
 class Test{
 
     public static void main(String[] args) {
-        
+    
 
         ArrayList<String> l=new ArrayList<>();
 
         // List<String> l1=Collections.synchronizedList(l);  
         //by default Arraylist is non-syncronized but by using Collection.syncronizedlist ,
         // programmmer can make the arraylist object syncronized.
-
 
         l.add("Megha");
         l.add("Shradha");
@@ -30,10 +29,17 @@ class Test{
         l.add("Anshita");
         l.add("Anshita");
 
-        
         l.set(4,"Golu");
+
+        Collections.sort(l); //by Collections(Utility Class), one can sort the object
         
-        // Collections.sort(l); //by Collections(Utility Class), one can sort the object
+        System.out.println( Collections.binarySearch(l, "Anshita"));// list should be sorted otherwise, we will get a unpridictable result. 
+        // This method returns index value and if given object is not present then it returns insertion order.
+        
+        Collections.reverse(l);     //reverse the given list object
+
+        Collections.reverseOrder((String o1, String o2)->o1.compareTo(o2));
+  
 
         // Sort by length using a custom comparator
         // l.sort((s1, s2) -> Integer.compare(s1.length(), s2.length()));
