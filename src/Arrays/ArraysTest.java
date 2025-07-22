@@ -1,11 +1,11 @@
 package Arrays;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class ArraysTest {
     
     public static void main(String[] args) {
+       
         
         int a[]={1,4,9,2,7,5};
 
@@ -43,15 +43,8 @@ public class ArraysTest {
         
         // l1.set(1,new Integer(10)); //RE: ArrayStoreException 
 
-
-        
-        
-        
         //** 
         System.out.println(l1);
-
-
-
 
     }
 }
