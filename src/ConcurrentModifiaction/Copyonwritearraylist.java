@@ -1,5 +1,6 @@
 package ConcurrentModifiaction;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -10,7 +11,9 @@ public class Copyonwritearraylist {
     //Iterator fail-safe 
     
     public static void main(String[] args) {
-        
+        ArrayList<Integer> l=new ArrayList<>();
+        l.add(6);
+        l.add(4);
         CopyOnWriteArrayList<Integer> list=new CopyOnWriteArrayList<>();  //thread safe version of arraylist object 
         //for every write operation a cloned copy of object is created and on that cloned copy update operation is executed
         //if there is more write operation then copyonwrite arraylist is the worst choice because it creates every time a cloned version of object that affects the performance
@@ -20,8 +23,14 @@ public class Copyonwritearraylist {
         list.add(3);
         list.add(4);
         list.add(5);
-
+        list.addIfAbsent(5);
         list.addLast(10);
+
+        list.addAll(l);
+        list.forEach(System.out::println);
+        list.addAllAbsent(l);
+        list.forEach(System.out::println);
+
 
         //Iterator of Arraylist can perform remove operation but iterator of copyonwritearaaylist can't 
         //perform remove operation. otherwise we will get run time exception saying unsupportedoperationException
