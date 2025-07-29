@@ -1,4 +1,4 @@
-package ConcurrentModifiaction;
+package ConcurrentModification;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -9,6 +9,7 @@ public class Copyonwritearraylist {
     //insertion order is preserved , duplicate objects are allowed, null insertion is allowed
     //implements Serializable, cloneable, Random Access
     //Iterator fail-safe 
+    //works on cloned copy of original objects
     
     public static void main(String[] args) {
         ArrayList<Integer> l=new ArrayList<>();
@@ -35,8 +36,11 @@ public class Copyonwritearraylist {
         //Iterator of Arraylist can perform remove operation but iterator of copyonwritearaaylist can't 
         //perform remove operation. otherwise we will get run time exception saying unsupportedoperationException
 
-        Iterator<Integer> itr=list.iterator();
-        while(itr.hasNext()){
+        Iterator<Integer> itr=list.iterator(); //can only perform read operation in copyonwritearraylist
+        list.add(99);  //every update operation will be performed on seperate copy Hence after getting
+        //iterator if we are trying to perform any modification to the List it won't be reflected to the iterator.
+
+        while(itr.hasNext()){  
             Integer i=(Integer)itr.next();
             if(i%2==0){
                 itr.remove();  //RE:UnsupportedOperationException

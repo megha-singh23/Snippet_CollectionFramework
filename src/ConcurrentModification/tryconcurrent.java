@@ -1,4 +1,4 @@
-package ConcurrentModifiaction;
+package ConcurrentModification;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -22,10 +22,6 @@ public class tryconcurrent {
 
             a.add(5);//ConcurrentModificationException
         }
-        
-        
-
-
     }
     
 }
