@@ -30,6 +30,7 @@ class Test{
         l.add("Anshita");
 
         l.set(4,"Golu");
+        l.size();
 
         Collections.sort(l); //by Collections(Utility Class), one can sort the object
         

@@ -15,6 +15,9 @@ public class Hashmapfunc {
         list.put("Age",20);
         list.put("Mobileno","9913679328");
         list.put("skills",new String[]{"HTML","CSS","Javascript","Java"}.toString());
+        list.put(null,"gh");
+
+        list.get(null);
 
          System.out.println(list);
 
